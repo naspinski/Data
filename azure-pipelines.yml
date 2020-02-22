@@ -23,20 +23,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
     versioningScheme: 'off'
-#- task: NuGetCommand@2
-#  inputs:
-#    command: 'pack'
-#    packagesToPack: '**/*.csproj'
-#    versioningScheme: 'byPrereleaseNumber'
-#    majorVersion: '1'
-#    minorVersion: '0'
-#    patchVersion: '0'
     
 - task: NuGetCommand@2
   inputs:
