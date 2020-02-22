@@ -1,4 +1,4 @@
-name: $(Build.DefinitionName).1.0.$(date:yyyyMMddHHmmss)
+name: $(Build.DefinitionName).1.0.$(date:yyyyMMdd)
 
 trigger:
 - master
